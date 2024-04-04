@@ -16,14 +16,12 @@ namespace FultonDevice
         public override IEnumerable<Gizmo> GetWornGizmos()
         {
             IEnumerable<Gizmo> gizmos = base.GetWornGizmos();
-            FultonAbility fa = new FultonAbility();
-            if(this.Wearer != null) { fa.pawn = this.Wearer; }
-            gizmos.Append(new Command_Ability(fa)
-            {
-                defaultLabel = "defaultLabel",
-                defaultDesc = "defaultDesc"
-            }) ;
             return gizmos;
         }
+
+
+
+
+        //public void Fulton
     }
 }

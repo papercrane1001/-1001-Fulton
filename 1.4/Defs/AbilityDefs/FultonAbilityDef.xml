@@ -13,6 +13,7 @@
 				<canTargetSelf>true</canTargetSelf>
 				<canTargetBuildings>false</canTargetBuildings>
 				<canTargetMechs>false</canTargetMechs>
+				<canTargetPawns>true</canTargetPawns>
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>

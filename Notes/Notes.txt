@@ -11,3 +11,8 @@ ________________________________________________________________________________
 
 Rethinking the grenades approach, now looking into Tunneler's smokepop ability.  I'd prefer the vanilla Rimworld methods after all.  
 
+________________________________________________________________________________
+
+
+
+Okay, I figured out how to do it the way I wanted to, but I'd have to redo a bunch of stuff.  Instead, I want to use Tynan's verbs, since I can ride on the "AbilityTouchBase" base.  
