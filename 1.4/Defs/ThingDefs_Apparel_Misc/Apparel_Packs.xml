@@ -36,9 +36,9 @@
 	
 	<verbs>
 		<li>
-			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<verbClass>Verb_Fulton</verbClass>
 			<drawAimPie>false</drawAimPie>
-			<range>-1</range>
+			<range>1.2</range>
 			<warmupTime>2</warmupTime>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>

@@ -16,3 +16,20 @@ ________________________________________________________________________________
 
 
 Okay, I figured out how to do it the way I wanted to, but I'd have to redo a bunch of stuff.  Instead, I want to use Tynan's verbs, since I can ride on the "AbilityTouchBase" base.  
+
+I'm going to ask the Discord for help
+
+
+I was basing things off of the Jump Packs
+Aelanna — Today at 3:59 PM
+The jump packs aren't abilities either.
+They use an apparel verb
+Only the Biotech jump abilities are actual abilities
+papercrane1001 — Today at 4:00 PM
+Okay, so I can scrap the Ability research and focus on the Verbs.  That's something.  Thanks!
+Aelanna — Today at 4:01 PM
+Mind you, there's a lot of good reasons to use AbilityDefs, I'm just saying that so far vanilla hasn't used them on apparel
+the apparel verbs are good if you want them to be fueled and such
+apparel verbs are used for jump packs, smokepop and tox packs, psychic lances, and the armor weapons from royalty like the phoenix and grenadier marine armors
+AbilityDefs have a lot more flexibility in what they can do and are useful for independent cooldowns rather than fueled systems
+I will say that vanilla is likely using AbilityDefs for the special weapons that are coming in Anomaly and we've largely managed to reverse-engineer how that works, but that has its own issues

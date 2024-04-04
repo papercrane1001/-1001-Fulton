@@ -11,20 +11,29 @@ using RimWorld;
 
 namespace FultonDevice
 {
-    public class Verb_Fulton : Verb
+    public class Verb_Fulton : Verb_CastAbilityTouch
     {
-        protected override bool TryCastShot()
+        public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
-            //throw new NotImplementedException();
-            return true;
-        }
-
-        protected override float EffectiveRange
-        {
-            get
+            if( base.ValidateTarget(target, showMessages))
             {
-                return 1.2f;
+                try
+                {
+                    Pawn pawn = null;
+                    if (target.Thing is Pawn p)
+                    {
+                        pawn = (Pawn)target.Thing;
+                    }
+                    if (pawn != null && pawn.Downed)
+                    {
+                        return true;
+                    }
+                }
+                catch { }
+                return true;
             }
+
+            return false;
         }
 
 
