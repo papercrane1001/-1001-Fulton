@@ -3,3 +3,11 @@ Here's what I think needs to happen.  I need an apparel with an ability with a s
 The ability should prompt the launch of the downed enemy.  Animation cna be a transport pod for now, or just the pawn flying upwards for max silliness.  
 What I'm not sure of yet is how the enemy should be received.  They could have a drop spot like VE:Outposts, or they could select a landing point like VVE...
 Or they could just trigger a custom downed pod event.  That might actually work in terms of balance.
+
+
+
+
+________________________________________________________________________________
+
+Rethinking the grenades approach, now looking into Tunneler's smokepop ability.  I'd prefer the vanilla Rimworld methods after all.  
+

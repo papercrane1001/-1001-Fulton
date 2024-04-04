@@ -1,42 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="ApparelNoQualityBase">
-	<defName>FultonBelt</defName>
+	<ThingDef ParentName="ApparelBase">
+	<thingClass>FultonDevice.FultonDeviceBelt</thingClass>
+	<defName>Apparel_FultonBelt</defName>
 	<label>fulton belt</label>
 	<description>You're going to extract him?</description>
 	<techLevel>Industrial</techLevel>
 	<comps>
-		<li Class="CompProperties_Reloadable">
-			<maxCharges>10</maxCharges>
-			<!-
-			<ammoDef
-			-!>
-			<ammoCountToRefill>25</ammoCountToRefill>
-			<baseReloadTicks>60</baseReloadTicks>
-			<soundReload>Standard_Reload</soundReload>
-			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-		</li>
-	</comps>
-	<verbs>
-      <li>
-        <label>attach fulton baloon</label>
-        <!verbClassverbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <range>1.2</range>
-        <forcedMissRadius>0</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
-        <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
-        <soundCast>Standard_Reload</soundCast>
-        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-        <targetParams>
-          <canTargetLocations>false</canTargetLocations>
-        </targetParams>
-        <defaultProjectile>Proj_GrenadeFrag</defaultProjectile>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>10</maxCharges>
+        <ammoDef>Cloth</ammoDef>
+        <ammoCountToRefill>25</ammoCountToRefill>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+		<hotKey>Misc4</hotKey>
+        <chargeNoun>fulton</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
       </li>
-    </verbs>
+    </comps>
+	<recipeMaker>
+      <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>310</displayPriority>
+    </recipeMaker>
+	
+	<verbs>
+		<li>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>2</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetPawns>true</canTargetPawns>
+			</targetParams>
+		</li>
+	</verbs>
+	
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>20</Steel>
+      <Chemfuel>10</Chemfuel>
+	  <Cloth>100</Cloth>
+    </costList>
+	
+	<graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	
+	<statBases>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+	
+	<thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+	
+	<apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</wornGraphicPath>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <offset>(0,-0.15)</offset>
+        </north>
+        <east>
+          <offset>(-0.35,-0.05)</offset>
+          <thin><offset>(0.05,0)</offset></thin>
+          <hulk><offset>(-0.1,0)</offset></hulk>
+          <fat><offset>(-0.15,0)</offset></fat>
+        </east>
+        <west>
+          <offset>(0.35,-0.05)</offset>
+          <thin><offset>(-0.05,0)</offset></thin>
+          <hulk><offset>(0.1,0)</offset></hulk>
+          <fat><offset>(0.15,0)</offset></fat>
+        </west>
+        <male>  <scale>(0.75,0.75)</scale></male>
+        <female><scale>(0.75,0.75)</scale></female>
+        <thin>  <scale>(0.7,0.7)</scale></thin>
+        <hulk>  <scale>(0.9,0.9)</scale></hulk>
+        <fat>   <scale>(0.9,0.9)</scale></fat>
+      </wornGraphicData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefensePop</li>
+      </tags>
+    </apparel>
+	
+	<tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+	
 	</ThingDef>
 
 
