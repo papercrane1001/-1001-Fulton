@@ -36,7 +36,11 @@
 	
 	<verbs>
 		<li>
-			<verbClass>Verb_Fulton</verbClass>
+			<verbClass>FultonDevice.Verb_Fulton</verbClass>
+			<label>fultonLabel</label>
+			<violent>true</violent>
+			<hasStandardCommand>true</hasStandardCommand>
+			<onlyManualCast>True</onlyManualCast>
 			<drawAimPie>false</drawAimPie>
 			<range>1.2</range>
 			<warmupTime>2</warmupTime>

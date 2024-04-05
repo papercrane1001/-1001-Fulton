@@ -29,3 +29,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-1001-Fulton\1.4\Sou
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-1001-Fulton\1.4\Source\FultonDevice\FultonDevice\obj\Debug\FultonDevice.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-1001-Fulton\1.4\Assemblies\FultonDevice.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-1001-Fulton\1.4\Assemblies\FultonDevice.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Assemblies\FultonDevice.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Assemblies\FultonDevice.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Source\FultonDevice\FultonDevice\obj\Debug\FultonDevice.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Source\FultonDevice\FultonDevice\obj\Debug\FultonDevice.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Source\FultonDevice\FultonDevice\obj\Debug\FultonDevice.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[1001]Fulton\1.4\Source\FultonDevice\FultonDevice\obj\Debug\FultonDevice.pdb
