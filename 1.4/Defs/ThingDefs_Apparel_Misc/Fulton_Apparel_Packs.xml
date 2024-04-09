@@ -38,6 +38,7 @@
 		<li>
 			<verbClass>FultonDevice.Verb_Fulton</verbClass>
 			<label>fultonLabel</label>
+			<iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
 			<violent>true</violent>
 			<hasStandardCommand>true</hasStandardCommand>
 			<onlyManualCast>True</onlyManualCast>

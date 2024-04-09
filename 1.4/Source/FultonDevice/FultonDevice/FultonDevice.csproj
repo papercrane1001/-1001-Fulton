@@ -49,7 +49,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FultonAbility.cs" />
     <Compile Include="FultonDeviceBelt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Verb_Fulton.cs" />
