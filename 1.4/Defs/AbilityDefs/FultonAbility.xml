@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>FultonAbility</defName>
+		<label>fulton</label>
+		<description>You're going to extract him?</description>
+		<iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+		
+		
+	</AbilityDef>
+</Defs>

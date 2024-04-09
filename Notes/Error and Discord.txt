@@ -1,0 +1,49 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at RimWorld.Verb_CastAbility.get_UIIcon () [0x00000] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.CompReloadable.CreateVerbTargetCommand (Verse.Thing gear, Verse.Verb verb) [0x000bf] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.CompReloadable+<CompGetWornGizmosExtra>d__35.MoveNext () [0x0010c] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.Apparel+<GetWornGizmos>d__23.MoveNext () [0x00090] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.Pawn_ApparelTracker+<GetGizmos>d__78.MoveNext () [0x0007d] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at Verse.Pawn+<GetGizmos>d__274.MoveNext () [0x007ef] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at System.Collections.Generic.List`1[T].InsertRange (System.Int32 index, System.Collections.Generic.IEnumerable`1[T] collection) [0x000db] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.List`1[T].AddRange (System.Collections.Generic.IEnumerable`1[T] collection) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.InspectGizmoGrid.DrawInspectGizmoGridFor (System.Collections.Generic.IEnumerable`1[T] selectedObjects, Verse.Gizmo& mouseoverGizmo) [0x000d7] in <cd7169108ea74757aa50c5b33d275c15>:0  currentSelectable: Zane
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+Verse.Log:ErrorOnce (string,int)
+RimWorld.InspectGizmoGrid:DrawInspectGizmoGridFor (System.Collections.Generic.IEnumerable`1<object>,Verse.Gizmo&)
+RimWorld.MainTabWindow_Inspect:DrawInspectGizmos ()
+RimWorld.InspectPaneUtility:ExtraOnGUI (RimWorld.IInspectPane)
+RimWorld.MainTabWindow_Inspect:ExtraOnGUI ()
+Verse.WindowStack:WindowStackOnGUI ()
+RimWorld.UIRoot_Play:UIRootOnGUI ()
+(wrapper dynamic-method) Verse.Root:Verse.Root.OnGUI_Patch1 (Verse.Root)
+
+
+
+
+
+
+
+
+
+
+
+
+Hey, I'm getting the following error with my apparel with a verb attached:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at RimWorld.Verb_CastAbility.get_UIIcon () [0x00000] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.CompReloadable.CreateVerbTargetCommand (Verse.Thing gear, Verse.Verb verb) [0x000bf] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.CompReloadable+<CompGetWornGizmosExtra>d__35.MoveNext () [0x0010c] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.Apparel+<GetWornGizmos>d__23.MoveNext () [0x00090] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at RimWorld.Pawn_ApparelTracker+<GetGizmos>d__78.MoveNext () [0x0007d] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at Verse.Pawn+<GetGizmos>d__274.MoveNext () [0x007ef] in <cd7169108ea74757aa50c5b33d275c15>:0 
+  at System.Collections.Generic.List`1[T].InsertRange (System.Int32 index, System.Collections.Generic.IEnumerable`1[T] collection) [0x000db] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.List`1[T].AddRange (System.Collections.Generic.IEnumerable`1[T] collection) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.InspectGizmoGrid.DrawInspectGizmoGridFor (System.Collections.Generic.IEnumerable`1[T] selectedObjects, Verse.Gizmo& mouseoverGizmo) [0x000d7] in <cd7169108ea74757aa50c5b33d275c15>:0  currentSelectable: Zane
+  
+  
+ Where am I supposed to have defined the UI Icon?  I have made:
+ X_Apparel_Packs.xml
+ XDeviceBelt.cs
+ 

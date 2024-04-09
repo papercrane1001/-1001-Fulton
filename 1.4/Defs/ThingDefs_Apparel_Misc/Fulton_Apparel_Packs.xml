@@ -38,7 +38,6 @@
 		<li>
 			<verbClass>FultonDevice.Verb_Fulton</verbClass>
 			<label>fultonLabel</label>
-			<iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
 			<violent>true</violent>
 			<hasStandardCommand>true</hasStandardCommand>
 			<onlyManualCast>True</onlyManualCast>
@@ -115,11 +114,11 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>BeltDefensePop</li>
       </tags>
     </apparel>
 	
 	<tradeTags>
+	  <li>ExoticMisc</li>
       <li>Clothing</li>
       <li>Armor</li>
     </tradeTags>
