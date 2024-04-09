@@ -13,11 +13,11 @@ namespace FultonDevice
     public class FultonDeviceBelt : Apparel
     {
 
-        public override IEnumerable<Gizmo> GetWornGizmos()
-        {
-            IEnumerable<Gizmo> gizmos = base.GetWornGizmos();
-            return gizmos;
-        }
+        //public override IEnumerable<Gizmo> GetWornGizmos()
+        //{
+        //    IEnumerable<Gizmo> gizmos = base.GetWornGizmos();
+        //    return gizmos;
+        //}
 
 
 
